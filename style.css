@@ -147,6 +147,9 @@ section {
   position: relative;
   width: 85vw;
   height: 479px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video1 {
@@ -165,11 +168,12 @@ section {
 }
 
 .video2 {
-  position: absolute;
+  /* position: absolute; */
   height: 300px;
   width: 400px;
-  top: 28px;
-  left: 280px;
+  /* top: 28px;
+  left: 280px; */
+  margin-top: -168px;
 }
 
 .kids {
@@ -177,7 +181,7 @@ section {
 }
 
 .kids img {
-  width: 600px;
+  width: 40vmax;
 }
 
 .faq {
@@ -205,4 +209,212 @@ section {
   align-items: center;
   border-radius: 5px;
   font-size: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 1100px) {
+  header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    height: 100vh;
+    width: auto;
+  }
+
+  .tint {
+    background-color: rgba(0, 0, 0, 0.45);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0px,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 40px;
+  }
+
+  nav div {
+    display: flex;
+    gap: 30px;
+  }
+
+  .en-btn {
+    text-transform: capitalize;
+    border-radius: 16px;
+    border: 1px solid darkgray;
+    background-color: rgba(38, 38, 38, 0.361);
+    color: white;
+    padding: 10px 30px;
+  }
+
+  .sign-in {
+    border-radius: 16px;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 60%;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .sub-heading {
+    font-size: 22px;
+  }
+
+  .sub-text {
+    font-weight: 500;
+  }
+
+  .get-started-email {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .email {
+    background-color: #0000008a;
+    border: 1px solid #474747;
+    border-radius: 3px;
+    padding: 14px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .get-started-email button {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 23px;
+    margin-left: 21px;
+    font-size: 23px;
+  }
+
+  .arrow {
+    margin: -2px 0px 0px 10px;
+  }
+
+  section {
+    border-bottom: 8px solid #eeeeee34;
+  }
+
+  .tv-section,
+  .kids-section,
+  .movies-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 50px;
+    width: 70vw;
+  }
+
+  .content-heading {
+    font-size: 40px;
+  }
+
+  .tv-section p,
+  .kids-section p {
+    font-size: 25px;
+  }
+
+  .media {
+    padding: 25px;
+    position: relative;
+    width: 85vw;
+    height: 479px;
+  }
+
+  .video1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -10px;
+  }
+
+  .media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video2 {
+    /* position: absolute; */
+    height: 300px;
+    width: 400px;
+    top: 28px;
+    left: 280px;
+  }
+
+  .kids {
+    padding: 40px;
+  }
+
+  .kids img {
+    width: 40vmax;
+  }
+
+  .faq {
+    padding: 50px;
+    margin: auto;
+  }
+
+  .faq h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .question-div {
+    width: 60%;
+    margin: auto;
+  }
+
+  .question {
+    padding: 5px 30px;
+    background-color: #59595934;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+  }
 }
